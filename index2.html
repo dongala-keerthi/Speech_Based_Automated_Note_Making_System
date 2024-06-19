@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email with Speech Recognition</title>
+    <link rel="stylesheet" href="speech.css" type="text/css" />
+  
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6373746702889938" crossorigin="anonymous"></script>
+    
+  </head>
+
+  <body >
+    <div class="container" >
+    <div  style="text-align: center;">
+    <div>
+      <h1 style='text-align: center'>Send Email with Speech</h>
+
+    </div>
+    
+    <div style="text-align: left;font-size: large;font-weight: bold;" class='speech'>Note: ( Click Start Recordingbutton &amp; talk )</div>
+    
+    <p style="text-align: left;font-weight: bolder;">Result:</p>
+    
+    <div class="main">
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <div class="button-container">
+    
+    <button class='start' tabindex="0">Start Recording</button>
+    <button class='stop'>Stop Recording</button>
+<!--     <button class='email'>Send Email</button> -->
+    <button class='instructionBtn'>Instructions</button>
+    <button class='clear'>Clear content</button>
+    </div>
+   
+
+    <span class="statusBar" data-text='Listening...'></span>
+    
+    
+    </div>
+    
+   
+    <br/>
+    <div class="instructionContainer hide" tabindex="-1">
+      <button class='instructionClose' tabindex="-1">X</button>
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Click Start button and click 'allow' to use microphone if popup comes up.</li>
+        <li>After allowing, just start talking means your subject text.</li>
+        <li>Speaking Commands:
+          <ul>
+            <li>For comma(,) say <mark class='markText'>'comma'</mark>.</li>
+            <li>For fullstop(.) say <mark class='markText'>'full stop'</mark>.</li>
+            <li>For exclamation(!) say <mark class='markText'>'exclamation sign'</mark>.</li>
+            <li>For question mark(?) say <mark class='markText'>'question mark'</mark>.</li>
+            <li>For delete something, say <mark class='markText'>'delete now'</mark>.</li>
+          </ul>
+        </li>
+        <li>After completing your subject, say <mark class='markText'>'line break'</mark> to break the line for your body content. After break, the body content part will start.</li>
+        <li>Say <mark class="markText">'paragraph break'</mark> for provide break between two lines.</li>
+        <li>When everything's done means after completing your body part, say <mark class='markText'>'send email'</mark> to open your default email provider(wheather it's a app or gmail account) and send mail specifically via gmail, just say <mark class="markText">send gmail</mark> and it'll open gmail.com and then just edit your recipient's email address and send email.</li>
+        <li>If you send email without providing 'line break' command (see point 4), then subject and body both will take the same content. </li>
+      </ol>
+      <h3>Background Color Change Commands:</h3>
+      <pre style='white-space: pre-wrap;'>
+    {
+      <span>Green : </span><mark class='markText'>'green'</mark><br>
+      <span>Purple : </span><mark class='markText'>'purple'</mark><br>
+      <span>Yellow : </span><mark class='markText'>'yellow'</mark><br>
+      <span>White : </span><mark class='markText'>'white'</mark><br>
+      <span>Tomato : </span><mark class='markText'>'tomato'</mark><br>
+      <span>Tan : </span><mark class='markText'>'tan'</mark><br>
+      <span>Thistle : </span><mark class='markText'>'thistle'</mark><br>
+      <span>Wheat : </span><mark class='markText'>'wheat'</mark><br>
+      <span>Lime : </span><mark class='markText'>'lime'</mark>
+    }
+    </pre>
+      <small class='smallText'><span>*</span> Yellow mark texts are the commands.</small>
+    </div>
+    <div class="notSupport">
+      <p><span>❌</span><span>Not Supported</span></p>
+      <p>Speech Recognition Only Working On Chrome</p>
+      <p>Try To Open This On Chrome</p>
+
+
+    </div>
+    </div>
+    
+    <script src="speech.min.js" type="text/javascript"></script>
+    
+    
+  </body>
+
+</html>

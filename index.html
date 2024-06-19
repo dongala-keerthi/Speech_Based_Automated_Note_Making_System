@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Making System</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body class="light-theme">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"style="font-size:30px;">Speech Based Automated Note-Making System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto"> <!-- This ml-auto class aligns the nav items to the right -->
+                <a class="nav-item nav-link active" href="about.html">About <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="instructions.html">Instructions</a>
+                <a class="nav-item nav-link" href="details.html">Details</a>
+                <button class="theme-toggle btn btn-outline-light" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+            </div>
+        </div>  
+    </nav>
+    
+    <div class="instructions" style="margin:30px;">
+        <h3>How to Use This System</h3>
+        <p>Getting started with our speech-based note-making and email generation system is easy. Follow these simple steps to begin:</p>
+        <h3>Creating Notes</h3>
+        <ol>
+            <li><i class="fas fa-microphone"></i> <strong>--Dictate Your Note:</strong> Clearly dictate the note you wish to make. You can speak naturally, and our system will transcribe your words into text in real-time.</li>
+            <li><i class="fas fa-save"></i> <strong>--Make Note:</strong> Once you've finished speaking, click the "Make Note" button. Your spoken words will be saved as a note that you can view, edit, or delete at any time.</li>
+        </ol>
+        <h3>Generating Emails</h3>
+        <ol>
+            <li><i class="fas fa-envelope"></i> <strong>--Dictate Your Email:</strong> Begin dictating your email. Start with the recipient, followed by the subject, and then the body of the email. For example, "Email to John Doe, subject meeting reminder, Hi John, just a reminder about our meeting tomorrow at 10 AM."</li>
+            <li><i class="fas fa-paper-plane"></i> <strong>--Generate Email:</strong> After completing your dictation, click the "Generate Email" button. The system will create an email based on your spoken instructions. You can review and send this email or make adjustments as needed.</li>
+        </ol>
+        <p><i class="fas fa-info-circle"></i> Note: The system is designed to recognize natural speech, but accuracy can vary based on clarity, background noise, and other factors. For best results, speak clearly and directly into the microphone in a quiet environment.</p>
+    </div>
+    
+    
+    <main class="container text-center py-5">
+        
+        <div class="mb-3 d-inline-block text-center">
+            <i class="fas fa-pencil-alt fa-2x"></i> <!-- Icon for Create Notes -->
+            <br> <!-- Added line break for better separation -->
+            <button class="btn btn-primary mx-2" id="createNotes">Create Notes</button>
+        </div>
+        <div class="d-inline-block text-center">
+            <i class="fas fa-envelope fa-2x"></i> <!-- Icon for Generate Email -->
+            <br> <!-- Added line break for better separation -->
+            <button class="btn btn-danger mx-2" id="generateEmail">Generate Email</button>
+        </div>
+    </main>
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

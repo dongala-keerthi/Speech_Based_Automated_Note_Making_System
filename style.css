@@ -1,0 +1,94 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar stays on top of other content */
+}
+body {
+    padding-top: 80px; /* Adjust this value based on the actual height of your navbar */
+}
+
+
+body.light-theme {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+body.dark-theme {
+    background-color: #17222e;
+    color: #f8f9fa;
+}
+
+
+
+/* Neon Navbar Styles */
+.navbar-light.bg-light {
+    background: linear-gradient(to right, #e259ab, #25a6e2); /* Neon pink-blue gradient */
+    color: #ffffff !important; /* Light text color */
+    position: fixed; /* Fixed position */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure navbar is above other content */
+    /* Additional styles for a neon effect */
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5); /* Neon glow effect */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+    color: #ffffff !important;
+   
+}
+
+/* Neon Button Styles */
+/* Neon Button Styles with Gradient */
+#createNotes.btn-primary {
+    background: linear-gradient(to right, #e259ab, #25a6e2);
+    border-color:  #e078b7;
+    color: #ffffff;
+}
+
+#createNotes.btn-primary:hover {
+    background: linear-gradient(to right, #e259ab, #25a6e2);
+    border-color:  #e078b7;
+    color: #ffffff;
+}
+
+#generateEmail.btn-danger {
+    background: linear-gradient(to right, #e259ab, #25a6e2);
+    border-color:  #e078b7;
+    color: #ffffff;
+}
+
+#generateEmail.btn-danger:hover {
+    background: linear-gradient(to right, #e259ab, #25a6e2);
+    border-color:  #e078b7;
+    color: #ffffff;
+}
+
+.theme-toggle {
+    border: none;
+    background-color: transparent;
+    color: inherit; /* Or specify a color */
+}
+
+.theme-toggle:focus {
+    outline: none;
+    box-shadow: none;
+}
+/* Ensuring no accidental checkbox-like appearances */
+.theme-toggle::before,
+.theme-toggle::after {
+    display: none;
+}
+/* Additional styling for the icon within the button for better visibility/contrast */
+.theme-toggle .fas {
+    font-size: 1.2rem; /* Adjust size as needed */
+}
+
+body.dark-theme .theme-toggle .fas {
+    color: #f8f9fa; /* Light color icon for dark theme */
+    
+}
